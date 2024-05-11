@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style-menu.css">
+  <title>Main Menu</title>
+</head>
+
+<body>
+
+
+
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>Game Rules</h2>
+      <p>
+        1. You have the option to play this game using either hand detection or a keyboard input method.<br><br>
+        2. In this game, when your hand is closed, it corresponds to the left action, and when your hand is open, it corresponds to the right action.<br><br>
+        3. If the spaceship collides with any obstacles, the game will be over.<br><br>
+        4. To initiate the game automatically, simply say 'start' using your voice.
+      </p>
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+    <h1 class="game-title">HandTrack SpaceShip</h1>
+  </div>
+  <div>
+    <p class="lebel-text" align="center">To access the game rules and learn how to play, simply say "Open rules" using your voice.</p>
+  </div>
+  <div class="button-container">
+    <button class="start-button">
+      <a href="game.html"><img src="start.png" alt="Start Button"></a>
+    </button>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+<script src="voice-detect.js"></script>
+
+</html>

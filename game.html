@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>web game</title>
+</head>
+
+<body>
+  
+  <div id="game">
+    <div id="bluecar">
+      <p align="center"><img src="rock.png" class="enemy"></p>
+    </div>
+    <div id="racecar">
+      <p align="center"><img src="rocket.png" class="user"></p>
+    </div>
+  </div>
+  <div id="result">
+    <h2>Game Over</h2>
+    <p id="score"></p>
+    <div class="btn-cont">
+      <button id="btn" onclick="location.reload()">Restart</button>
+      <button id="btn" onclick="redirectToPage()">Exit</button>
+    </div>
+  </div>
+  <div class="canvas-container">
+    <video id="video" width="640" height="480" style="display: none;" autoplay></video>
+    <canvas id="canvas"></canvas>
+  </div>
+
+
+</body>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
+<script src="hand-detect-code.js"></script>
+<script src="script.js"></script>
+<!-- <script src="voice-detect-for-game.js"></script> -->
+</html>

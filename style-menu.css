@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("spacebg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40vh;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust the opacity (0.5 in this case) to control the darkness */
+  z-index: -1;
+}
+
+.game-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 48px;
+  color: #ff9900;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+  font-family: 'Kanit', sans-serif;
+  color: #c9c9c9;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.start-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.start-button img {
+  width: 200px;
+  height: 80px;
+  padding: 50px;
+}
+
+.popup {
+  position: fixed;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* semi-transparent background */
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.25s, opacity 0.25s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  width: 60%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.popup-content h2{
+  font-family: 'Kanit', sans-serif;
+}
